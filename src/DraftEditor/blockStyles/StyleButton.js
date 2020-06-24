@@ -23,9 +23,9 @@ const StyleButton = (props) => {
   }, [props.active]);
 
   return (
-    <span className={className} onMouseDown={onToggle}>
+    <button className={className} onMouseDown={onToggle}>
       {props.label}
-    </span>
+    </button>
   );
 };
 

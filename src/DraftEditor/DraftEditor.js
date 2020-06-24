@@ -117,9 +117,9 @@ const DraftEditor = () => {
 
   const onAddImage = (e) => {
     e.preventDefault();
-    const editorState = editorState;
+    const editedState = editorState;
     const urlValue = window.prompt("Paste Image Link");
-    const contentState = editorState.getCurrentContent();
+    const contentState = editedState.getCurrentContent();
     const contentStateWithEntity = contentState.createEntity(
       "image",
       "IMMUTABLE",
@@ -151,6 +151,7 @@ const DraftEditor = () => {
       <button id="link_url" onClick={isAddingOrUpdatingLink}>
         LINK
       </button>
+      <button onClick={onAddImage}>Photo</button>
       <BlockStyleControls
         editorState={editorState}
         onToggle={toggleBlockType}

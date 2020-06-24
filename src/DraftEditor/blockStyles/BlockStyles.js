@@ -22,7 +22,7 @@ export function getBlockStyle(block) {
 }
 
 export const BLOCK_TYPES = [
-  { label: `" "`, style: "blockquote" },
+  { label: "quote", style: "blockquote" },
   { label: "UL", style: "unordered-list-item" },
   { label: "OL", style: "ordered-list-item" },
   { label: "< / >", style: "code-block" },
